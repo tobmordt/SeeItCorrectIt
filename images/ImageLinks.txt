@@ -1,0 +1,41 @@
+Logo:
+	https://www.uat.edu/themes/uat/images/uat-logo.png
+
+Video:
+	https://www.uat.edu/themes/uat/videos/home-loopv2.mp4
+
+Find your fit:
+
+Buisness & innovation:
+	https://www.uat.edu/themes/uat/images/business-innovation-icon.png
+Creation &Simulation
+	https://www.uat.edu/themes/uat/images/creation-simulation-icon.png
+Cyber:
+	https://www.uat.edu/themes/uat/images/cyber-security-icon.png
+Digital arts
+	https://www.uat.edu/themes/uat/images/digital-arts-icon.png
+game studies
+	https://www.uat.edu/themes/uat/images/game-studies-icon.png
+software engineering:
+	https://www.uat.edu/themes/uat/images/software-engineering-icons.png
+
+
+Changing today:
+
+background-image:url(https://learn.uat.edu/hubfs/bug_bounty-100701715-large.jpg)
+	"https://blog.uat.edu/bug-bounties-in-2020"
+
+background-image:url(https://learn.uat.edu/hubfs/IMG_9719.jpg)
+	https://www.uattech.com/from-student-to-coworker-perimeter83-expands-offerings-for-uat-alum?__hstc=214042312.0ecd8d2b91fd2243169a48d32e1e7299.1603184844073.1604910678459.1604915985697.7&__hssc=214042312.2.1604915985697&__hsfp=3460590872"
+
+background-image:url(https://learn.uat.edu/hubfs/Dominique.jpeg)
+	href="https://www.uattech.com/an-interview-with-student-dominique-faulkner-usaf-veteran?__hstc=214042312.0ecd8d2b91fd2243169a48d32e1e7299.1603184844073.1604910678459.1604915985697.7&__hssc=214042312.2.1604915985697&__hsfp=3460590872"
+
+background-image:url(https://learn.uat.edu/hubfs/PSAHeaderImage.png)
+	href="https://www.uattech.com/uat-48-hour-psa-challenge-combats-cyber-bullying?__hstc=214042312.0ecd8d2b91fd2243169a48d32e1e7299.1603184844073.1604910678459.1604915985697.7&__hssc=214042312.2.1604915985697&__hsfp=3460590872"
+
+background-image:url(https://learn.uat.edu/hubfs/ErinAliBlog.png)
+	href="https://www.uattech.com/uat-alum-erin-ali-is-playing-to-win?__hstc=214042312.0ecd8d2b91fd2243169a48d32e1e7299.1603184844073.1604910678459.1604915985697.7&__hssc=214042312.2.1604915985697&__hsfp=3460590872"
+
+background-image:url(https://learn.uat.edu/hubfs/An%20Interview%20with%20Stefani%20Johnson,.png)
+	href="https://www.uattech.com/an-interview-with-stefani-johnson-data-manager-and-cyber-student?__hstc=214042312.0ecd8d2b91fd2243169a48d32e1e7299.1603184844073.1604910678459.1604915985697.7&__hssc=214042312.2.1604915985697&__hsfp=3460590872"
