@@ -9,16 +9,28 @@
 </head>
 <body>
     <div class="grid-container">
-        <logo>
+        <div class="logo">
+            <div class="logo-img">
+                <img src="images/uat-logo.png" alt="UAT Logo">
+            </div>
             <h4>
                 Learn.<br>
                 Experience.<br>
                 Innovate.
             </h4>
-        </logo>
+        </div>
         <header>
-            <p>We are UAT.</p>
-            <h3>Think outside the box.</h3>
+            <div class="vid-container">
+                <video autoplay muted loop class="vid">
+                    <source src="https://www.uat.edu/themes/uat/videos/home-loopv2.mp4" type="video/mp4">
+                </video>
+                <div id="align-text">
+                    <div class="vid-text">
+                        <p>We are UAT</p>
+                        <h3>Think outside the box.</h3>
+                    </div>
+                </div>
+            </div>
         </header>
         <nav>
             <ul class="nav-links">
@@ -27,12 +39,19 @@
                 <li><a href="#">(800) 658-5744</a></li>
                 <li><a href="#">Request info</a></li>
             </ul>
-            <div class="dropdown-menu">
-                <p>I would like a degree in...</p>
+            <div class="dropdown">
+                <button class="drop-button">I would like a degree in...</button>
+                <div class="drop-content">
+                    <a href="#">a</a>
+                    <a href="#">b</a>
+                    <a href="#">c</a>
+                    <a href="#">d</a>
+                    <a href="#">e</a>
+                </div>
             </div>
         </nav>
         <aside>
-            <ul class="menu-links">
+            <ul class="menu">
                 <li><a href="#">Degrees</a></li>
                 <li><a href="#">Admissions</a></li>
                 <li><a href="#">Academics</a></li>
@@ -44,10 +63,9 @@
                 <li><a href="#">Request info</a></li>
                 <li><a href="#">(800) 658-5744</a></li>
             </ul>
+
         </aside>
         <main>
-            <h1>Find your fit</h1>
-            <h2>Explore our degrees</h2>
         </main>
         <right>
 
