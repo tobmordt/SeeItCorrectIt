@@ -28,9 +28,6 @@
     text-transform: uppercase;
 }
 
-.logo-img {
-
-}
 
 header {
     grid-area: header;
@@ -42,7 +39,7 @@ header {
     width: 100%;
     height: 100%;
     position:relative;
-    line-height: 40vh;
+    line-height: 45vh;
 
 }
 
@@ -62,21 +59,21 @@ header {
     display: inline-block;
     vertical-align: middle;
     text-transform: uppercase;
-    line-height: 30px; /* <-- adjust this */
+    line-height: 40px; /* <-- adjust this */
     text-align: left;
 }
 
 #align-text {
     text-align: right;
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 .vid-text h3 {
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .vid-text p {
-    font-size: 30px;
+    font-size: 40px;
     font-style: italic;
 }
 
@@ -85,7 +82,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 6vh;
     color: white;
     background-color: #1f1f1f;
     z-index: 3;
@@ -103,7 +100,7 @@ nav {
 .nav-links a {
     text-decoration: none;
     color: white;
-    padding-right: 30px;
+    padding-right: 70px;
 }
 
 .nav-links a:hover {
@@ -130,7 +127,7 @@ nav {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
     z-index: 1;
 }
 
@@ -154,14 +151,13 @@ nav {
 aside {
     grid-area: aside;
     background-color: #323232;
-    height: 100vh;
     box-shadow: -20px 0 40px #000000;
-
+    padding-bottom: 100px;
 }
 
 .menu {
     height: 100%;
-    width: 100%;
+    width: auto;
     list-style: none;
     margin: 0;
     display: flex;
@@ -175,11 +171,23 @@ aside {
 
 .menu a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: #ffffff;
 }
 
 .menu a:hover {
+    color: #ff6969;
+}
+
+details > summary {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+}
+
+details > summary:hover {
     color: #ff6969;
 }
 
@@ -194,8 +202,56 @@ main {
 
 footer {
     grid-area: footer;
-    background-color: #ff6969;
-    height: 15vh;
+    background-color: #eeeeee;
+    height: auto;
     z-index: 3;
+    display: flex;
+    align-items: center;
+    padding: 2% 5%;
+}
+
+.footer-column {
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.footer-list {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-list li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.footer-list a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+
+.footer-list a:hover {
+    color: #ff6969;
+}
+
+.footer-column p {
+    font-size: 12px;
+}
+
+
+.footer-column img {
+    width: 25%;
+    height: auto;
+    padding-right: 10%;
 }
 
