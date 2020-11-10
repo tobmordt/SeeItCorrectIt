@@ -101,7 +101,7 @@ footer {
   text-align: center;
   padding-top: 1vh;
 }
-.annouencements {
+.announcements {
   grid-row: 1;
   grid-column: 1 / 5;
 }
@@ -190,7 +190,7 @@ a[class*="new"]:hover {
      grid-gap: 5vh;
      height: auto;
    }
-   .annouencements {
+   .announcements {
      grid-column: 1;
      grid-row: 1;
    }
@@ -241,7 +241,7 @@ a[class*="new"]:hover {
 
 
 #Degree {
-  height: 100vh;
+  height: 800px;
   margin-top: 50px;
   display: grid;
   grid-template-areas:
@@ -249,11 +249,14 @@ a[class*="new"]:hover {
   'nav1 nav2 image'
   'nav3 nav4 image'
   'nav5 nav6 image';
+  grid-template-columns: 30% 30% 40%;
 }
 
 #Section2Title {
   grid-area: title;
   text-align: center;
+  padding-top: 20px;
+  height: 105px;
 }
 #Section2Image {
   grid-area: image;
@@ -261,9 +264,35 @@ a[class*="new"]:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-a[class*="nav"] div {
+div[class*="nav"] {
+  height: 225px;
+  box-sizing: border-box;
+}
+div[class*="nav"] h3 {
+  padding: 10px 30px;
+  text-align: center;
+}
+div[class*="nav"] div {
   overflow: auto;
   height: 100px;
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-position: center;
+}
+div[class*="nav"] ul {
+  display: none;
+  font-size: 1rem;
+  color: #b60000;
+}
+div[class*="nav"] li {
+  padding: 5px;
+}
+div[class*="nav"] a {
+  text-decoration: none;
+  color: #b60000;
+  padding: 5px;
 }
 .nav1 {
   grid-area: nav1;
@@ -306,4 +335,26 @@ a[class*="nav"] div {
 .nav6 div {
   background-image: url("https://www.uat.edu/themes/uat/images/software-engineering-icon.png");
   background-repeat: no-repeat;
+}
+.color-grey {
+  background-color: rgba(200, 200, 200, 0.4);
+}
+
+.color-grey:hover, .color-white:hover {
+  background-color: white;
+}
+
+div[class*="nav"]:hover ul {
+  display: block;
+}
+div[class*="nav"]:hover div {
+  display: none;
+}
+div[class*="nav"]:hover h3 {
+  margin-top: 20px;
+}
+
+div[class*="nav"] a:hover {
+  background-color: #b60000;
+  color: white;
 }
