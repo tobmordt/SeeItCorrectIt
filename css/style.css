@@ -84,8 +84,12 @@ footer {
 /* Styles for the first section*/
 #SectionContainer1 {
   display: grid;
+  grid-template-areas:
+  'announcements announcements news news'
+  'ann1 imgSection1 new1 new2'
+  'ann2 imgSection1 new3 new4';
   grid-template-columns: 22% 22% 22% 22%;
-  grid-template-rows: 10% 20% 10% 35%;
+  grid-template-rows: 20% 35% 35%;
   grid-gap: 4%;
   height: 700px;
   overflow: auto;
@@ -93,7 +97,7 @@ footer {
 }
 #SectionContainer1 h1 {
   text-align: center;
-  padding-top: 3vh;
+  padding-top: 5vh;
   font-size: 2rem;
 }
 #SectionContainer1 a {
@@ -103,28 +107,55 @@ footer {
   padding-top: 1vh;
 }
 .announcements {
-  grid-row: 1;
-  grid-column: 1 / 5;
+  grid-area: announcements;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(106, 143, 113, 1);
 }
 .news {
-  grid-row: 3;
-  grid-column: 1 / 5;
+  grid-area: news;
+  border-bottom-style: solid;
+  border-bottom-color: #aa0e28;
 }
 .ann1 {
-  grid-column: 1 / 3;
-  grid-row: 2;
+  grid-area: ann1;
 }
 .ann2 {
-  grid-column: 3 / 5;
-  grid-row: 2;
+  grid-area: ann2;
 }
-a[class*="ann"] p {
+.new1 {
+  grid-area: new1;
+}
+.new2 {
+  grid-area: new2;
+}
+.new3 {
+  grid-area: new3;
+}
+.new4 {
+  grid-area: new4;
+}
+.imgSection1 {
+  grid-area: imgSection1;
+  background-image: url('../images/notebook-336634_640.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+a[class*="ann"] {
+  background-color: rgb(106, 143, 113, 1);
+}
+a[class*="new"] {
+  background-color: rgba(170, 14, 40, 1);
+}
+a[class*="ann"] p,
+a[class*="new"] p {
   padding: 2vh 15%;
-  border-top-style: solid;
-  border-top-color: rgba(100, 150, 250, 1);
+  color: white;
 }
-a[class*="ann"] h2 {
+a[class*="ann"] h2,
+a[class*="new"] h2 {
   padding: 2vh 0;
+  color: white;
 }
 a[class*="ann"] div {
   width: 70%;
@@ -132,33 +163,29 @@ a[class*="ann"] div {
   margin-right: 15%
 }
 
-a[class*="new"] p {
-  padding: 2vh 15%;
-  border-top-style: solid;
-  border-top-color: #aa0e28;
+a[class*="ann"]:hover h2 {
+  color: black;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(106, 143, 113, 1);
 }
-a[class*="new"] h2 {
-  padding: 2vh 0;
-}
-
-a[class*="ann"] div:hover p,
-a[class*="new"]:hover p {
-   color: white;
-   border-top-style: solid;
-   border-top-color: white;
-}
-a[class*="ann"] div:hover h2,
 a[class*="new"]:hover h2 {
-   color: white;
+  color: black;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(170, 14, 40, 1);
+}
+a[class*="ann"]:hover p,
+a[class*="new"]:hover p {
+   color: black;
  }
 
-a[class*="ann"] div:hover {
-   background-color: rgba(100, 150, 250, 1);
+
+a[class*="ann"]:hover {
+   background-color: rgb(106, 143, 113, 0.3);
    transition: background 1s;
  }
 
 a[class*="new"]:hover {
-   background-color: #aa0e28;
+   background-color: rgba(170, 14, 40, 0.3);
    transition: background 1s;
  }
 
@@ -167,22 +194,6 @@ a[class*="new"]:hover {
    #SectionContainer1 {
      grid-template-rows: 70px 160px 70px 195px 195px;
      height: 850px;
-   }
-   .new1 {
-     grid-column: 1 / 3;
-     grid-row: 4;
-   }
-   .new2 {
-     grid-column: 3 / 5;
-     grid-row: 4;
-   }
-   .new3 {
-     grid-row: 5;
-     grid-column: 1 / 3;
-   }
-   .new4 {
-     grid-row: 5;
-     grid-column: 3 / 5;
    }
  }
 
