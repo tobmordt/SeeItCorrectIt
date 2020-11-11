@@ -80,8 +80,8 @@ footer {
     border-color: #2196F3;
 }
 
-/* Styles for the first section*/
 
+/* Styles for the first section*/
 #SectionContainer1 {
   display: grid;
   grid-template-columns: 22% 22% 22% 22%;
@@ -94,6 +94,7 @@ footer {
 #SectionContainer1 h1 {
   text-align: center;
   padding-top: 3vh;
+  font-size: 2rem;
 }
 #SectionContainer1 a {
   text-decoration: none;
@@ -153,10 +154,12 @@ a[class*="new"]:hover h2 {
 
 a[class*="ann"] div:hover {
    background-color: rgba(100, 150, 250, 1);
+   transition: background 1s;
  }
 
 a[class*="new"]:hover {
    background-color: #aa0e28;
+   transition: background 1s;
  }
 
  /* Make first section responsive */
@@ -239,11 +242,10 @@ a[class*="new"]:hover {
      }
  }
 
-
 #Degree {
   height: 955px;
-  margin-top: 50px;
   display: grid;
+  margin-top: 50px;
   grid-template-areas:
   'title title image'
   'nav1 nav2 image'
@@ -295,7 +297,7 @@ div[class*="nav"] li {
 }
 div[class*="nav"] a {
   text-decoration: none;
-  color: #b60000;
+  color: #b60000;;
   padding: 5px;
 }
 .nav1 {
@@ -346,8 +348,8 @@ div[class*="nav"] a {
 
 .color-grey:hover, .color-white:hover {
   background-color: white;
+  transition: background 1s;
 }
-
 div[class*="nav"]:hover ul {
   display: block;
 }
@@ -360,6 +362,7 @@ div[class*="nav"]:hover h3 {
 
 div[class*="nav"] li:hover {
   background-color: #b60000;
+  transition: background 1s;
 }
 div[class*="nav"] li:hover a {
   color: white;
@@ -397,8 +400,9 @@ div[class*="nav"] li:hover a {
 }
 
 /*
-  Removes hover effect if the client device does not 
-  have a pointing device which supports hover
+  Removes hover effect if the client device does not
+  have a pointing device which supports hover:
+  https://medium.com/@ferie/detect-a-touch-device-with-only-css-9f8e30fa1134
 */
 @media (hover: none) {
   div[class*="nav"] ul {
@@ -406,5 +410,108 @@ div[class*="nav"] li:hover a {
   }
   div[class*="nav"] div {
     display: none;
+  }
+}
+
+
+/* Styles for section3 */
+#ChangingToday {
+  grid-template-areas:
+  'title title title'
+  'Art1 Art2 Art3'
+  'Art4 Art5 Art6';
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  margin: 100px 10vw;
+  grid-column-gap: 5%;
+  grid-row-gap: 50px;
+}
+
+#Section3Title {
+  grid-area: title;
+  text-align: center;
+  padding: 40px 0;
+}
+#Section3Title h1 {
+  font-size: 2rem;
+}
+.Art1 div {
+  grid-area: Art1;
+  background-image: url('https://learn.uat.edu/hubfs/sdqd.jpg');
+}
+.Art2 div {
+  grid-area: Art2;
+  background-image: url('https://learn.uat.edu/hubfs/bug_bounty-100701715-large.jpg');
+}
+.Art3 div {
+  grid-area: Art3;
+  background-image: url('https://learn.uat.edu/hubfs/IMG_9719.jpg');
+}
+.Art4 div {
+  grid-area: Art4;
+  background-image: url('https://learn.uat.edu/hubfs/MRI_free.jpg');
+}
+.Art5 div {
+  grid-area: Art5;
+  background-image: url('https://learn.uat.edu/hubfs/Dominique.jpeg');
+}
+.Art6 div {
+  grid-area: Art6;
+  background-image: url('https://learn.uat.edu/hubfs/Programmatic/Robotics/banner-1.jpg');
+}
+a[class*="Art"] div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+  height: 200px;
+}
+a[class*="Art"] {
+  text-decoration: none;
+  color: black;
+  background-color: rgba(220, 220, 220, 1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a[class*="Art"] h2 {
+  padding: 40px 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+a[class*="Art"]:hover {
+  background-color: rgba(100, 150, 250, 1);
+}
+a[class*="Art"]:hover div {
+  opacity: 0.5;
+}
+
+a[class*="Art"]:hover h2 {
+  color: white;
+}
+
+@media (max-width: 1100px) {
+  #ChangingToday {
+    grid-template-areas:
+    'title title'
+    'Art1 Art2'
+    'Art3 Art4'
+    'Art5 Art6';
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-column-gap: 6%;
+  }
+}
+
+@media (max-width: 755px) {
+  #ChangingToday {
+    grid-template-areas:
+    'title'
+    'Art1'
+    'Art2'
+    'Art3'
+    'Art4'
+    'Art5'
+    'Art6';
+    display: grid;
+    grid-template-columns: 100%;
   }
 }
