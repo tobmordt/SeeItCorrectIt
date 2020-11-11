@@ -252,7 +252,7 @@ a[class*="new"]:hover {
   'nav3 nav4 image'
   'nav5 nav6 image';
   grid-template-columns: 30% 30% 40%;
-  background-color: rgba(240, 240, 240, 1);
+  background-color: rgb(37 166 181 / 13%);
 }
 
 #Section2Title {
@@ -266,7 +266,7 @@ a[class*="new"]:hover {
 }
 #Section2Image {
   grid-area: image;
-  background-image: url("../images/nathan-dumlao-xPHmmVKS8lM-unsplash.jpg");
+  background-image: url("../images/thisisengineering-raeng-sbVu5zitZt0-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -290,14 +290,14 @@ div[class*="nav"] div {
 div[class*="nav"] ul {
   display: none;
   font-size: 1rem;
-  color: #b60000;
+  color: rgb(1 82 97);
 }
 div[class*="nav"] li {
   padding: 5px;
 }
 div[class*="nav"] a {
   text-decoration: none;
-  color: #b60000;;
+  color: rgb(1 82 97);
   padding: 5px;
 }
 .nav1 {
@@ -343,10 +343,14 @@ div[class*="nav"] a {
   background-repeat: no-repeat;
 }
 .color-grey {
-  background-color: rgba(200, 200, 200, 0.4);
+  background-color: rgb(1 170 189 / 15%);
 }
 
 .color-grey:hover, .color-white:hover {
+  background-color: white;
+  transition: background 1s;
+}
+.color-grey:focus, .color-white:focus {
   background-color: white;
   transition: background 1s;
 }
@@ -359,12 +363,29 @@ div[class*="nav"]:hover div {
 div[class*="nav"]:hover h3 {
   margin-top: 20px;
 }
-
 div[class*="nav"] li:hover {
-  background-color: #b60000;
+  background-color: rgb(1 82 97);
   transition: background 1s;
 }
 div[class*="nav"] li:hover a {
+  color: white;
+}
+
+/* Tabindex (focus) */
+div[class*="nav"]:focus ul {
+  display: block;
+}
+div[class*="nav"]:focus div {
+  display: none;
+}
+div[class*="nav"]:focus h3 {
+  margin-top: 20px;
+}
+div[class*="nav"] li:focus {
+  background-color: rgb(1 82 97);
+  transition: background 1s;
+}
+div[class*="nav"] li:focus a {
   color: white;
 }
 
@@ -433,7 +454,7 @@ div[class*="nav"] li:hover a {
   padding: 40px 0;
 }
 #Section3Title h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .Art1 div {
   grid-area: Art1;
@@ -469,7 +490,7 @@ a[class*="Art"] div {
 a[class*="Art"] {
   text-decoration: none;
   color: black;
-  background-color: rgba(220, 220, 220, 1);
+  background-color: rgb(37 166 181 / 13%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 a[class*="Art"] h2 {
@@ -478,7 +499,7 @@ a[class*="Art"] h2 {
   text-align: center;
 }
 a[class*="Art"]:hover {
-  background-color: rgba(100, 150, 250, 1);
+  background-color: rgb(1 82 97);
 }
 a[class*="Art"]:hover div {
   opacity: 0.5;
@@ -513,5 +534,47 @@ a[class*="Art"]:hover h2 {
     'Art6';
     display: grid;
     grid-template-columns: 100%;
+  }
+}
+
+/* Styles for follow us */
+#FollowUs {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#FollowUs > h1 {
+  font-size: 2rem;
+  padding: 20px 0;
+  text-align: center;
+}
+.socialMediaIcons a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.socialMediaIcons {
+  margin: 10px 10%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 33% 33% 33%;
+  grid-row-gap: 10px;
+}
+.socialMediaIcons span {
+  font-size: 30px;
+  padding: 10px;
+}
+.socialMediaIcons span:hover {
+  background-color: rgb(1 82 97);
+  color: white;
+  transition: color 1s;
+}
+
+@media (max-width: 600px) {
+  .socialMediaIcons {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 15% 15% 15% 15% 15%;
+    grid-row-gap: 10px;
   }
 }
