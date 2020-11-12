@@ -89,9 +89,9 @@ footer {
   'ann1 imgSection1 new1 new2'
   'ann2 imgSection1 new3 new4';
   grid-template-columns: 22% 22% 22% 22%;
-  grid-template-rows: 20% 35% 35%;
+  grid-template-rows: 150px 325px 325px;
   grid-gap: 4%;
-  height: 700px;
+  height: 860px;
   overflow: auto;
   padding: 10px;
 }
@@ -136,10 +136,9 @@ footer {
 }
 .imgSection1 {
   grid-area: imgSection1;
-  background-image: url('../images/notebook-336634_640.jpg');
+  background: url('../images/notebook-336634_640.jpg') -200px 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 a[class*="ann"] {
   background-color: rgb(106, 143, 113, 1);
@@ -192,14 +191,23 @@ a[class*="new"]:hover {
  /* Make first section responsive */
  @media (max-width: 1000px) {
    #SectionContainer1 {
-     grid-template-rows: 70px 160px 70px 195px 195px;
-     height: 850px;
+     display: grid;
+     grid-template-areas:
+     'announcements announcements'
+     'ann1 imgSection1'
+     'ann2 imgSection1'
+     'news news'
+     'new1 new2'
+     'new3 new4';
+     grid-template-columns: 48% 48%;
+     grid-template-rows: 150px 250px 250px 150px 250px 250px;
+     height: 2050px;
    }
  }
 
  @media (max-width: 800px) {
    #SectionContainer1 {
-     grid-template-rows: 40px 160px 160px 40px 160px 170px 160px 160px;
+     grid-template-rows: 100px 160px 160px 100px 160px 170px 160px 160px;
      grid-template-columns: 100%;
      grid-gap: 5vh;
      height: auto;
@@ -246,7 +254,7 @@ a[class*="new"]:hover {
 
  @media (max-width: 600px) {
    #SectionContainer1 {
-       grid-template-rows: 40px 40vw 40vw 40px 40vw 40vw 40vw 40vw;
+       grid-template-rows: 80px 40vw 40vw 80px 40vw 40vw 40vw 40vw;
        grid-template-columns: 100%;
        grid-gap: 5vh;
        height: auto;
@@ -256,7 +264,7 @@ a[class*="new"]:hover {
 #Degree {
   height: 955px;
   display: grid;
-  margin-top: 50px;
+  margin-top: 100px;
   grid-template-areas:
   'title title image'
   'nav1 nav2 image'
