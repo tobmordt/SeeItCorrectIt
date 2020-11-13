@@ -270,7 +270,7 @@ footer {
   grid-template-columns: 48% 48%;
   grid-template-rows: 150px 250px 250px 150px 250px 250px;
   height: 88rem;
-  padding: 10rem;
+  padding: 1rem 10rem;
   grid-column-gap: 4%;
   grid-row-gap: 1rem;
 }
@@ -441,7 +441,8 @@ a[class*="new"]:focus {
   'nav3 nav4 image'
   'nav5 nav6 image';
   grid-template-columns: 30% 30% 40%;
-  background-color: rgb(37 166 181 / 13%);
+  background-color: white;
+  padding: 0 10rem;
 }
 
 #Section2Title {
@@ -449,6 +450,7 @@ a[class*="new"]:focus {
   text-align: center;
   padding-top: 40px;
   height: 135px;
+  background-color: rgb(37 166 181 / 13%);
 }
 #Section2Title h1 {
   font-size: 3rem;
@@ -458,6 +460,7 @@ a[class*="new"]:focus {
   background-image: url("../images/thisisengineering-raeng-sbVu5zitZt0-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 div[class*="nav"] {
   height: 260px;
@@ -534,7 +537,11 @@ div[class*="nav"] a {
   background-repeat: no-repeat;
 }
 .color-grey {
-  background-color: rgb(1 170 189 / 15%);
+  background-color: rgb(1 170 189 / 25%);
+}
+
+.color-white {
+  background-color: rgb(37 166 181 / 13%);
 }
 
 .color-grey:hover, .color-white:hover {
@@ -634,9 +641,10 @@ div[class*="nav"] li:focus a {
   'Art4 Art5 Art6';
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  margin: 100px 10vw;
+  margin: 100px 0;
   grid-column-gap: 5%;
   grid-row-gap: 50px;
+  padding: 1rem 10rem;
 }
 
 #Section3Title {
