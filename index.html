@@ -10,16 +10,26 @@
 </head>
 <body>
     <div class="grid-container">
-        <logo>
+        <div class="logo">
+            <img src="images/uat-logo.png" alt="UAT Logo">
             <h4>
                 Learn.<br>
                 Experience.<br>
                 Innovate.
             </h4>
-        </logo>
+        </div>
         <header>
-            <p>We are UAT.</p>
-            <h3>Think outside the box.</h3>
+            <div class="vid-container">
+                <video autoplay muted loop class="vid">
+                    <source src="https://www.uat.edu/themes/uat/videos/home-loopv2.mp4" type="video/mp4">
+                </video>
+                <div id="align-text">
+                    <div class="vid-text">
+                        <p>We are UAT</p>
+                        <h3>Think outside the box.</h3>
+                    </div>
+                </div>
+            </div>
         </header>
         <nav>
             <ul class="nav-links">
@@ -28,25 +38,75 @@
                 <li><a href="#">(800) 658-5744</a></li>
                 <li><a href="#">Request info</a></li>
             </ul>
-            <div class="dropdown-menu">
-                <p>I would like a degree in...</p>
+            <div class="dropdown">
+                <button class="drop-button">I would like a degree in...</button>
+                <div class="drop-content">
+                    <a href="#">a</a>
+                    <a href="#">b</a>
+                    <a href="#">c</a>
+                    <a href="#">d</a>
+                    <a href="#">e</a>
+                </div>
             </div>
         </nav>
         <aside>
-            <ul class="menu-links">
-                <li><a href="#">Degrees</a></li>
-                <li><a href="#">Admissions</a></li>
-                <li><a href="#">Academics</a></li>
-                <li><a href="#">Student experience</a></li>
-                <li><a href="#">About UAT</a></li>
-                <li><a href="#">New & events</a></li>
+            <ul class="menu">
+                <li><details>
+                    <summary>Degrees</summary>
+                    <ul class="menu">
+                        <li><a href="#">Business & Innovation</a></li>
+                        <li><a href="#">Creation & Simulation</a></li>
+                    </ul>
+                </details></li>
+                <li><details>
+                    <summary>Admission</summary>
+                    <ul class="menu">
+                        <li><a href="#">Academic Calendar</a></li>
+                        <li><a href="#">Featured Alumni</a></li>
+                    </ul>
+                </details></li>
+                <li><details>
+                    <summary>Academics</summary>
+                    <ul class="menu">
+                        <li><a href="#">UAT Online</a></li>
+                        <li><a href="#">Academic Catalog</a></li>
+                    </ul>
+                </details></li>
+                <li><details>
+                    <summary>Student Experience</summary>
+                    <ul class="menu">
+                        <li><a href="#">UAT Online</a></li>
+                        <li><a href="#">Academic Catalog</a></li>
+                    </ul>
+                </details></li>
+                <li><details>
+                    <summary>About UAT</summary>
+                    <ul class="menu">
+                        <li><a href="#">UAT Online</a></li>
+                        <li><a href="#">Academic Catalog</a></li>
+                    </ul>
+                </details></li>
+                <li><details>
+                    <summary>News & Event</summary>
+                    <ul class="menu">
+                        <li><a href="#">UAT Online</a></li>
+                        <li><a href="#">Academic Catalog</a></li>
+                    </ul>
+                </details></li>
+
                 <li><a href="#">Login</a></li>
+
                 <li><a href="#">Apply</a></li>
-                <li><a href="#">Request info</a></li>
-                <li><a href="#">(800) 658-5744</a></li>
+
+                <li><a href="#">Request Info</a></li>
+
+                <li><a href="#">(800) 658-5744)</a></li>
+
             </ul>
+
         </aside>
         <main>
+
           <section id="SectionContainer1">
             <h1 class="announcements">ANNOUNCEMENTS</h1>
             <a class="ann1"
@@ -65,7 +125,6 @@
             </a>
             <!-- Image by Free-Photos from Pixaba https://pixabay.com/no/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=336634 -->
             <div class="imgSection1" role="img" aria-label="Image of a workspace"></div>
-
             <h1 class="news">NEWS & EVENTS</h1>
             <a class="new1"
               href="https://learn.uat.edu/episode-2020">
@@ -367,7 +426,39 @@
           </section>
         </main>
         <footer>
+            <div class="footer-column">
+                    <img src="images/uat-logo-mobile.png" alt="UAT Logo">
+                    <h5>2625 W. Baseline RD.<br>
+                        Tempe, AZ 85283-1056<br><br>
+                        (800) 658-5744</h5>
 
+            </div>
+            <div class="footer-column">
+                <ul class="footer-list">
+                    <li><a href="#">Degrees</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Academics</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul class="footer-list">
+                    <li><a href="#">Student Experience</a></li>
+                    <li><a href="#">About UAT</a></li>
+                    <li><a href="#">News & Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul class="footer-list">
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Apply</a></li>
+                    <li><a href="#">Request Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <p>©2020 University of Advancing Technology<br>
+                    All Rights Reserved<br>
+                    Online Brand by FabCom</p>
+            </div>
         </footer>
     </div>
 
