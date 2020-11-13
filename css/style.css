@@ -18,7 +18,9 @@
     grid-area: logo;
     text-align: center;
     padding-top: 2vh;
+    min-height: 30vh;
     box-shadow: -20px 0 40px #000000;
+    padding-bottom: 50px;
 }
 
 .logo h4 {
@@ -83,6 +85,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 6vh;
+    max-height: 40vh;
     color: white;
     background-color: #1f1f1f;
     z-index: 3;
@@ -95,6 +98,8 @@ nav {
 
 .nav-links li {
     list-style: none;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 
 .nav-links a {
@@ -148,13 +153,15 @@ nav {
     background-color: #f9f9f9;
 }
 
-aside {
+.side-menu {
     grid-area: aside;
     background-color: #323232;
     box-shadow: -20px 0 40px #000000;
     padding-bottom: 100px;
     width: 20vw;
 }
+
+
 
 .menu {
     height: 100%;
@@ -256,6 +263,61 @@ footer {
     padding-right: 10%;
 }
 
+@media screen and (max-width: 768px){
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        display: none;
+    }
+    nav {
+        height: 30vh;
+    }
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .nav-links a {
+        font-size: 1.2rem;
+        padding-right: 0;
+    }
+    .dropdown {
+        display: none;
+    }
+    .side-menu {
+        width: 100vw;
+        text-align: center;
+        padding-bottom: 10vh;
+    }
+    .menu li {
+        padding-left: 0;
+    }
+    details > summary {
+        font-size: 1.2rem;
+    }
+    .menu a {
+        font-size: 1rem;
+    }
+    footer {
+        flex-direction: column;
+        padding-bottom: 5vh;
+    }
+    .footer-column {
+        width: 100%;
+        text-align: center;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+    .footer-list a {
+        font-size: 1rem;
+    }
+    .footer-column p {
+        font-size: 0.7rem;
+    }
+}
+
 
 /* Styles for the first section*/
 #SectionContainer1 {
@@ -289,7 +351,7 @@ footer {
 .announcements {
   grid-area: announcements;
   border-bottom-style: solid;
-  border-bottom-color: rgb(106, 143, 113, 1);
+  border-bottom-color: rgba(106, 143, 113, 1);
   color: rgb(60 79 60);
 }
 .news {
@@ -323,7 +385,7 @@ footer {
   background-size: cover;
 }
 a[class*="ann"] {
-  background-color: rgb(60, 79, 60, 1);
+  background-color: rgba(60, 79, 60, 1);
   border-style: solid;
   border-color: black;
 }
@@ -347,7 +409,7 @@ a[class*="ann"]:hover h2,
 a[class*="ann"]:focus h2 {
   color: black;
   border-bottom-style: solid;
-  border-bottom-color: rgb(106, 143, 113, 1);
+  border-bottom-color: rgba(106, 143, 113, 1);
 }
 a[class*="new"]:hover h2,
 a[class*="new"]:focus h2 {
@@ -363,12 +425,12 @@ a[class*="new"]:focus p {
  }
 a[class*="ann"]:hover,
 a[class*="ann"]:focus {
-   background-color: rgb(106, 143, 113, 0);
+   background-color: rgba(106, 143, 113, 0.3);
    transition: background 1s;
  }
 a[class*="new"]:hover,
 a[class*="new"]:focus {
-   background-color: rgba(170, 14, 40, 0);
+   background-color: rgba(170, 14, 40, 0.3);
    transition: background 1s;
  }
 
@@ -377,7 +439,7 @@ a[class*="new"]:focus {
 
  @media (max-width: 800px) {
    #SectionContainer1 {
-     grid-template-rows: 100px 170px 170px 100px 170px 190px 170px 170px;
+     grid-template-rows: 100px 160px 160px 100px 160px 170px 160px 160px;
      grid-template-columns: 100%;
      grid-gap: 5vh;
      height: auto;
@@ -609,13 +671,14 @@ div[class*="nav"] li:focus a {
     'title'
     'nav1'
     'nav2'
-    'nav4'
     'nav3'
+    'nav4'
     'nav5'
     'nav6';
     grid-template-columns: 100%;
     height: auto;
   }
+
   #Section2Title {
     height: 200px;
   }
@@ -632,9 +695,6 @@ div[class*="nav"] li:focus a {
   }
   div[class*="nav"] div {
     display: none;
-  }
-  div[class*="nav"] a {
-    color: black;
   }
 }
 
