@@ -508,6 +508,9 @@ a[class*="new"]:focus {
      .news {
        border-style: none;
      }
+     #SectionContainer1 h1 {
+       font-size: 1.4rem;
+     }
  }
 
 #Degree {
