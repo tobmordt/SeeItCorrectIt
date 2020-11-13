@@ -363,12 +363,12 @@ a[class*="new"]:focus p {
  }
 a[class*="ann"]:hover,
 a[class*="ann"]:focus {
-   background-color: rgb(106, 143, 113, 0.3);
+   background-color: rgb(106, 143, 113, 0);
    transition: background 1s;
  }
 a[class*="new"]:hover,
 a[class*="new"]:focus {
-   background-color: rgba(170, 14, 40, 0.3);
+   background-color: rgba(170, 14, 40, 0);
    transition: background 1s;
  }
 
