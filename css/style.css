@@ -486,7 +486,7 @@ a[class*="new"]:focus {
 
  @media (max-width: 600px) {
    #SectionContainer1 {
-       grid-template-rows: 80px 30vw 30vw 80px 30vw 30vw 30vw 30vw;
+       grid-template-rows: 80px 40vw 40vw 80px 40vw 40vw 40vw 40vw;
        grid-template-columns: 100%;
        grid-gap: 5vh;
        height: auto;
@@ -497,6 +497,17 @@ a[class*="new"]:focus {
    a[class*="new"] p {
      display: none;
    }
+   #SectionContainer1 {
+       grid-template-rows: 80px 30vw 30vw 80px 30vw 30vw 30vw 30vw;
+       grid-template-columns: 100%;
+       grid-gap: 5vh;
+       height: auto;
+     }
+
+     .announcements,
+     .news {
+       border-style: none;
+     }
  }
 
 #Degree {
