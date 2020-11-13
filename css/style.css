@@ -84,11 +84,13 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 6vh;
+    min-height: 5vh;
     max-height: 40vh;
     color: white;
     background-color: #1f1f1f;
     z-index: 3;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .nav-links {
@@ -105,7 +107,8 @@ nav {
 .nav-links a {
     text-decoration: none;
     color: white;
-    padding-right: 70px;
+    padding-right: 5vw;
+    font-size: 1rem;
 }
 
 .nav-links a:hover {
@@ -159,6 +162,7 @@ nav {
     box-shadow: -20px 0 40px #000000;
     padding-bottom: 100px;
     width: 20vw;
+    padding-right: 5%;
 }
 
 
@@ -263,6 +267,20 @@ footer {
     padding-right: 10%;
 }
 
+@media screen and (max-width: 1024px){
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+    details > summary {
+        font-size: 0.8rem;
+    }
+    .menu a {
+        font-size: 0.8rem;
+    }
+    .logo img {
+        width: 80%;
+    }
+}
 @media screen and (max-width: 768px){
     .grid-container {
         display: flex;
@@ -271,16 +289,15 @@ footer {
     header {
         display: none;
     }
-    nav {
-        height: 30vh;
-    }
     .nav-links {
         flex-direction: column;
         text-align: center;
-        justify-content: space-around;
+    }
+    .logo img {
+        width: 30%;
     }
     .nav-links a {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding-right: 0;
     }
     .dropdown {
@@ -295,10 +312,10 @@ footer {
         padding-left: 0;
     }
     details > summary {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .menu a {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     footer {
         flex-direction: column;
@@ -532,7 +549,7 @@ a[class*="new"]:focus {
   text-align: center;
   padding-top: 40px;
   height: 135px;
-  background-color: rgb(37 166 181 / 13%);
+  background-color: rgba(37, 166, 181, 0.13);
 }
 #Section2Title h1 {
   font-size: 3rem;
@@ -619,11 +636,11 @@ div[class*="nav"] a {
   background-repeat: no-repeat;
 }
 .color-grey {
-  background-color: rgb(1 170 189 / 25%);
+  background-color: rgba(1, 170, 189, 0.25);
 }
 
 .color-white {
-  background-color: rgb(37 166 181 / 13%);
+  background-color: rgba(37, 166, 181, 0.13);
 }
 
 .color-grey:hover, .color-white:hover {
@@ -775,7 +792,7 @@ a[class*="Art"] div {
 a[class*="Art"] {
   text-decoration: none;
   color: black;
-  background-color: rgb(37 166 181 / 13%);
+  background-color: rgba(37, 166, 181, 0.13);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 a[class*="Art"] h2 {
