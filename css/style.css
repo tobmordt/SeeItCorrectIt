@@ -425,12 +425,12 @@ a[class*="new"]:focus p {
  }
 a[class*="ann"]:hover,
 a[class*="ann"]:focus {
-   background-color: rgba(106, 143, 113, 0.3);
+   background-color: rgba(106, 143, 113, 0);
    transition: background 1s;
  }
 a[class*="new"]:hover,
 a[class*="new"]:focus {
-   background-color: rgba(170, 14, 40, 0.3);
+   background-color: rgba(170, 14, 40, 0);
    transition: background 1s;
  }
 
@@ -671,8 +671,8 @@ div[class*="nav"] li:focus a {
     'title'
     'nav1'
     'nav2'
-    'nav3'
     'nav4'
+    'nav3'
     'nav5'
     'nav6';
     grid-template-columns: 100%;
