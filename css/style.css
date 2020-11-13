@@ -486,11 +486,17 @@ a[class*="new"]:focus {
 
  @media (max-width: 600px) {
    #SectionContainer1 {
-       grid-template-rows: 80px 40vw 40vw 80px 40vw 40vw 40vw 40vw;
+       grid-template-rows: 80px 30vw 30vw 80px 30vw 30vw 30vw 30vw;
        grid-template-columns: 100%;
        grid-gap: 5vh;
        height: auto;
      }
+ }
+ @media (max-width: 450px) {
+   a[class*="ann"] p,
+   a[class*="new"] p {
+     display: none;
+   }
  }
 
 #Degree {
