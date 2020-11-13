@@ -270,7 +270,7 @@ footer {
   grid-template-columns: 48% 48%;
   grid-template-rows: 150px 250px 250px 150px 250px 250px;
   height: 88rem;
-  padding: 2rem;
+  padding: 10rem;
   grid-column-gap: 4%;
   grid-row-gap: 1rem;
 }
@@ -480,6 +480,8 @@ div[class*="nav"] ul {
   display: none;
   font-size: 1rem;
   color: rgb(1 82 97);
+  list-style: none;
+  padding-left: 20px;
 }
 div[class*="nav"] li {
   padding: 5px;
