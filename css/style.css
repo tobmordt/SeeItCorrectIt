@@ -10,8 +10,9 @@
     grid-template-areas:
     'logo header header header header header'
     'nav nav nav nav nav nav'
-    'aside main main main right right'
+    'aside main main main main main'
     'footer footer footer footer footer footer';
+
 }
 
 .logo {
@@ -255,3 +256,533 @@ footer {
     padding-right: 10%;
 }
 
+
+/* Styles for the first section*/
+#SectionContainer1 {
+  display: grid;
+  grid-template-areas:
+  'announcements announcements news news'
+  'ann1 imgSection1 new1 new2'
+  'ann2 imgSection1 new3 new4';
+  grid-template-columns: 22% 22% 22% 22%;
+  grid-template-rows: 9.3rem 20.3rem 20.3rem;
+  grid-column-gap: 4%;
+  grid-row-gap: 1rem;
+  height: calc(1rem * 2 + 9.3rem + 20.3rem * 2);
+  padding: 1rem;
+}
+#SectionContainer1 h1 {
+  text-align: center;
+  padding-top: 5vh;
+  font-size: 2rem;
+}
+#SectionContainer1 a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding-top: 1vh;
+}
+.announcements {
+  grid-area: announcements;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(106, 143, 113, 1);
+  color: rgb(60 79 60);
+}
+.news {
+  grid-area: news;
+  border-bottom-style: solid;
+  border-bottom-color: #aa0e28;
+  color: #aa0e28;
+}
+.ann1 {
+  grid-area: ann1;
+}
+.ann2 {
+  grid-area: ann2;
+}
+.new1 {
+  grid-area: new1;
+}
+.new2 {
+  grid-area: new2;
+}
+.new3 {
+  grid-area: new3;
+}
+.new4 {
+  grid-area: new4;
+}
+.imgSection1 {
+  grid-area: imgSection1;
+  background: url('../images/notebook-336634_1280.jpg') -200px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a[class*="ann"] {
+  background-color: rgb(60, 79, 60, 1);
+  border-style: solid;
+  border-color: black;
+}
+a[class*="new"] {
+  background-color: rgba(170, 14, 40, 1);
+  border-style: solid;
+  border-color: black;
+}
+a[class*="ann"] p,
+a[class*="new"] p {
+  padding: 2vh 15%;
+  color: white;
+}
+a[class*="ann"] h2,
+a[class*="new"] h2 {
+  padding: 2vh 0;
+  color: white;
+}
+
+a[class*="ann"]:hover h2,
+a[class*="ann"]:focus h2 {
+  color: black;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(106, 143, 113, 1);
+}
+a[class*="new"]:hover h2,
+a[class*="new"]:focus h2 {
+  color: black;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(170, 14, 40, 1);
+}
+a[class*="ann"]:hover p,
+a[class*="new"]:hover p,
+a[class*="ann"]:focus p,
+a[class*="new"]:focus p {
+   color: black;
+ }
+a[class*="ann"]:hover,
+a[class*="ann"]:focus {
+   background-color: rgb(106, 143, 113, 0.3);
+   transition: background 1s;
+ }
+a[class*="new"]:hover,
+a[class*="new"]:focus {
+   background-color: rgba(170, 14, 40, 0.3);
+   transition: background 1s;
+ }
+
+ /* Make first section responsive */
+ @media (max-width: 1000px) {
+   #SectionContainer1 {
+     display: grid;
+     grid-template-areas:
+     'announcements announcements'
+     'ann1 imgSection1'
+     'ann2 imgSection1'
+     'news news'
+     'new1 new2'
+     'new3 new4';
+     grid-template-columns: 48% 48%;
+     grid-template-rows: 150px 250px 250px 150px 250px 250px;
+     height: 2050px;
+   }
+ }
+
+ @media (max-width: 800px) {
+   #SectionContainer1 {
+     grid-template-rows: 100px 160px 160px 100px 160px 170px 160px 160px;
+     grid-template-columns: 100%;
+     grid-gap: 5vh;
+     height: auto;
+   }
+   .announcements {
+     grid-column: 1;
+     grid-row: 1;
+   }
+   .ann1 {
+     grid-column: 1;
+     grid-row: 2
+   }
+   .ann2 {
+     grid-column: 1;
+     grid-row: 3
+   }
+   .news {
+     grid-column: 1;
+     grid-row: 4;
+   }
+   .new1 {
+     grid-column: 1;
+     grid-row: 5;
+   }
+   .new2 {
+     grid-column: 1;
+     grid-row: 6;
+   }
+   .new3 {
+     grid-row: 7;
+     grid-column: 1;
+   }
+   .new4 {
+     grid-row: 8;
+     grid-column: 1;
+   }
+   a[class*="new"] div,
+   a[class*="ann"] div {
+     width: 90%;
+     margin-left: 5%;
+     margin-right: 5%
+   }
+ }
+
+ @media (max-width: 600px) {
+   #SectionContainer1 {
+       grid-template-rows: 80px 40vw 40vw 80px 40vw 40vw 40vw 40vw;
+       grid-template-columns: 100%;
+       grid-gap: 5vh;
+       height: auto;
+     }
+ }
+
+#Degree {
+  height: 955px;
+  display: grid;
+  margin-top: 100px;
+  grid-template-areas:
+  'title title image'
+  'nav1 nav2 image'
+  'nav3 nav4 image'
+  'nav5 nav6 image';
+  grid-template-columns: 30% 30% 40%;
+  background-color: rgb(37 166 181 / 13%);
+}
+
+#Section2Title {
+  grid-area: title;
+  text-align: center;
+  padding-top: 40px;
+  height: 135px;
+}
+#Section2Title h1 {
+  font-size: 3rem;
+}
+#Section2Image {
+  grid-area: image;
+  background-image: url("../images/thisisengineering-raeng-sbVu5zitZt0-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div[class*="nav"] {
+  height: 260px;
+  box-sizing: border-box;
+}
+div[class*="nav"] h3 {
+  padding: 10px 30px;
+  text-align: center;
+}
+div[class*="nav"] div {
+  overflow: auto;
+  height: 100px;
+  width: 50%;
+  margin-top: 40px;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-position: center;
+}
+div[class*="nav"] ul {
+  display: none;
+  font-size: 1rem;
+  color: rgb(1 82 97);
+}
+div[class*="nav"] li {
+  padding: 5px;
+}
+div[class*="nav"] a {
+  text-decoration: none;
+  color: rgb(1 82 97);
+  padding: 5px;
+}
+.nav1 {
+  grid-area: nav1;
+}
+.nav1 div {
+  background-image: url("https://www.uat.edu/themes/uat/images/business-innovation-icon.png");
+  background-repeat: no-repeat;
+}
+.nav2 {
+  grid-area: nav2;
+}
+.nav2 div {
+  background-image: url("https://www.uat.edu/themes/uat/images/creation-simulation-icon.png");
+  background-repeat: no-repeat;
+}
+.nav3 {
+  grid-area: nav3;
+}
+.nav3 div {
+  background-image: url("https://www.uat.edu/themes/uat/images/cyber-security-icon.png");
+  background-repeat: no-repeat;
+}
+.nav4 {
+  grid-area: nav4;
+}
+.nav4 div {
+  background-image: url("https://www.uat.edu/themes/uat/images/digital-arts-icon.png");
+  background-repeat: no-repeat;
+}
+.nav5 {
+  grid-area: nav5;
+}
+.nav5 div {
+  background-image: url("https://www.uat.edu/themes/uat/images/game-studies-icon.png");
+  background-repeat: no-repeat;
+}
+.nav6 {
+  grid-area: nav6;
+}
+.nav6 div {
+  background-image: url("https://www.uat.edu/themes/uat/images/software-engineering-icon.png");
+  background-repeat: no-repeat;
+}
+.color-grey {
+  background-color: rgb(1 170 189 / 15%);
+}
+
+.color-grey:hover, .color-white:hover {
+  background-color: white;
+  transition: background 1s;
+}
+.color-grey:focus, .color-white:focus {
+  background-color: white;
+  transition: background 1s;
+}
+div[class*="nav"]:hover ul {
+  display: block;
+}
+div[class*="nav"]:hover div {
+  display: none;
+}
+div[class*="nav"]:hover h3 {
+  margin-top: 20px;
+}
+div[class*="nav"] li:hover {
+  background-color: rgb(1 82 97);
+  transition: background 1s;
+}
+div[class*="nav"] li:hover a {
+  color: white;
+}
+
+/* Tabindex (focus) */
+div[class*="nav"]:focus ul {
+  display: block;
+}
+div[class*="nav"]:focus div {
+  display: none;
+}
+div[class*="nav"]:focus h3 {
+  margin-top: 20px;
+}
+div[class*="nav"] li:focus {
+  background-color: rgb(1 82 97);
+  transition: background 1s;
+}
+div[class*="nav"] li:focus a {
+  color: white;
+}
+
+@media (max-width: 1050px) {
+  #Degree {
+    grid-template-areas:
+    'title title'
+    'nav1 nav2'
+    'nav3 nav4'
+    'nav5 nav6';
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (max-width: 700px) {
+  #Degree {
+    display: grid;
+    grid-template-areas:
+    'title'
+    'nav1'
+    'nav2'
+    'nav3'
+    'nav4'
+    'nav5'
+    'nav6';
+    grid-template-columns: 100%;
+    height: auto;
+  }
+
+  #Section2Title {
+    height: 200px;
+  }
+}
+
+/*
+  Removes hover effect if the client device does not
+  have a pointing device which supports hover:
+  https://medium.com/@ferie/detect-a-touch-device-with-only-css-9f8e30fa1134
+*/
+@media (hover: none) {
+  div[class*="nav"] ul {
+    display: block;
+  }
+  div[class*="nav"] div {
+    display: none;
+  }
+}
+
+
+/* Styles for section3 */
+#ChangingToday {
+  grid-template-areas:
+  'title title title'
+  'Art1 Art2 Art3'
+  'Art4 Art5 Art6';
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  margin: 100px 10vw;
+  grid-column-gap: 5%;
+  grid-row-gap: 50px;
+}
+
+#Section3Title {
+  grid-area: title;
+  text-align: center;
+  padding: 40px 0;
+}
+#Section3Title h1 {
+  font-size: 3rem;
+}
+.Art1 div {
+  grid-area: Art1;
+  background-image: url('https://learn.uat.edu/hubfs/sdqd.jpg');
+}
+.Art2 div {
+  grid-area: Art2;
+  background-image: url('https://learn.uat.edu/hubfs/bug_bounty-100701715-large.jpg');
+}
+.Art3 div {
+  grid-area: Art3;
+  background-image: url('https://learn.uat.edu/hubfs/IMG_9719.jpg');
+}
+.Art4 div {
+  grid-area: Art4;
+  background-image: url('https://learn.uat.edu/hubfs/MRI_free.jpg');
+}
+.Art5 div {
+  grid-area: Art5;
+  background-image: url('https://learn.uat.edu/hubfs/Dominique.jpeg');
+}
+.Art6 div {
+  grid-area: Art6;
+  background-image: url('https://learn.uat.edu/hubfs/Programmatic/Robotics/banner-1.jpg');
+}
+a[class*="Art"] div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: auto;
+  height: 200px;
+}
+a[class*="Art"] {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(37 166 181 / 13%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a[class*="Art"] h2 {
+  padding: 40px 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+a[class*="Art"]:hover {
+  background-color: rgb(1 82 97);
+}
+a[class*="Art"]:hover div {
+  opacity: 0.5;
+}
+
+a[class*="Art"]:hover h2 {
+  color: white;
+}
+
+@media (max-width: 1100px) {
+  #ChangingToday {
+    grid-template-areas:
+    'title title'
+    'Art1 Art2'
+    'Art3 Art4'
+    'Art5 Art6';
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-column-gap: 6%;
+  }
+}
+
+@media (max-width: 755px) {
+  #ChangingToday {
+    grid-template-areas:
+    'title'
+    'Art1'
+    'Art2'
+    'Art3'
+    'Art4'
+    'Art5'
+    'Art6';
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
+
+/* Styles for follow us */
+#FollowUs {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#FollowUs > h1 {
+  font-size: 2rem;
+  padding: 20px 0;
+  text-align: center;
+}
+.socialMediaIcons a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.socialMediaIcons {
+  margin: 10px 10%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-row-gap: 5%;
+  grid-column-gap: 20%;
+}
+.socialMediaIcons span {
+  font-size: 30px;
+  padding: 10px;
+  line-height: 40px;
+}
+.socialMediaIcons a:hover {
+  background-color: rgb(1 82 97);
+  color: white;
+  transition: color 1s;
+}
+.socialMediaIcons span p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 800px) {
+  .socialMediaIcons {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 15% 15% 15% 15% 15% 15%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10%;
+    margin: 0px;
+    width: 100%;
+  }
+
+}
