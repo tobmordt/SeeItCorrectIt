@@ -89,11 +89,11 @@ footer {
   'ann1 imgSection1 new1 new2'
   'ann2 imgSection1 new3 new4';
   grid-template-columns: 22% 22% 22% 22%;
-  grid-template-rows: 150px 325px 325px;
-  grid-gap: 4%;
-  height: 860px;
-  overflow: auto;
-  padding: 10px;
+  grid-template-rows: 9.3rem 20.3rem 20.3rem;
+  grid-column-gap: 4%;
+  grid-row-gap: 1rem;
+  height: calc(1rem * 2 + 9.3rem + 20.3rem * 2);
+  padding: 1rem;
 }
 #SectionContainer1 h1 {
   text-align: center;
@@ -110,11 +110,13 @@ footer {
   grid-area: announcements;
   border-bottom-style: solid;
   border-bottom-color: rgb(106, 143, 113, 1);
+  color: rgb(60 79 60);
 }
 .news {
   grid-area: news;
   border-bottom-style: solid;
   border-bottom-color: #aa0e28;
+  color: #aa0e28;
 }
 .ann1 {
   grid-area: ann1;
@@ -136,15 +138,19 @@ footer {
 }
 .imgSection1 {
   grid-area: imgSection1;
-  background: url('../images/notebook-336634_640.jpg') -200px 0;
+  background: url('../images/notebook-336634_1280.jpg') -200px 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
 a[class*="ann"] {
-  background-color: rgb(106, 143, 113, 1);
+  background-color: rgb(60, 79, 60, 1);
+  border-style: solid;
+  border-color: black;
 }
 a[class*="new"] {
   background-color: rgba(170, 14, 40, 1);
+  border-style: solid;
+  border-color: black;
 }
 a[class*="ann"] p,
 a[class*="new"] p {
@@ -156,34 +162,32 @@ a[class*="new"] h2 {
   padding: 2vh 0;
   color: white;
 }
-a[class*="ann"] div {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%
-}
 
-a[class*="ann"]:hover h2 {
+a[class*="ann"]:hover h2,
+a[class*="ann"]:focus h2 {
   color: black;
   border-bottom-style: solid;
   border-bottom-color: rgb(106, 143, 113, 1);
 }
-a[class*="new"]:hover h2 {
+a[class*="new"]:hover h2,
+a[class*="new"]:focus h2 {
   color: black;
   border-bottom-style: solid;
   border-bottom-color: rgba(170, 14, 40, 1);
 }
 a[class*="ann"]:hover p,
-a[class*="new"]:hover p {
+a[class*="new"]:hover p,
+a[class*="ann"]:focus p,
+a[class*="new"]:focus p {
    color: black;
  }
-
-
-a[class*="ann"]:hover {
+a[class*="ann"]:hover,
+a[class*="ann"]:focus {
    background-color: rgb(106, 143, 113, 0.3);
    transition: background 1s;
  }
-
-a[class*="new"]:hover {
+a[class*="new"]:hover,
+a[class*="new"]:focus {
    background-color: rgba(170, 14, 40, 0.3);
    transition: background 1s;
  }
@@ -575,25 +579,34 @@ a[class*="Art"]:hover h2 {
   margin: 10px 10%;
   width: 80%;
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 33% 33% 33%;
-  grid-row-gap: 10px;
+  grid-template-columns: 20% 20% 20%;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-row-gap: 5%;
+  grid-column-gap: 20%;
 }
 .socialMediaIcons span {
   font-size: 30px;
   padding: 10px;
+  line-height: 40px;
 }
-.socialMediaIcons span:hover {
+.socialMediaIcons a:hover {
   background-color: rgb(1 82 97);
   color: white;
   transition: color 1s;
 }
+.socialMediaIcons span p {
+  font-family: 'Montserrat', sans-serif;
+}
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .socialMediaIcons {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 45%;
     grid-template-rows: 15% 15% 15% 15% 15% 15%;
     grid-row-gap: 10px;
+    grid-column-gap: 10%;
+    margin: 0px;
+    width: 100%;
   }
+
 }
