@@ -261,16 +261,20 @@ footer {
 #SectionContainer1 {
   display: grid;
   grid-template-areas:
-  'announcements announcements news news'
-  'ann1 imgSection1 new1 new2'
-  'ann2 imgSection1 new3 new4';
-  grid-template-columns: 22% 22% 22% 22%;
-  grid-template-rows: 9.3rem 20.3rem 20.3rem;
+  'announcements announcements'
+  'ann1 imgSection1'
+  'ann2 imgSection1'
+  'news news'
+  'new1 new2'
+  'new3 new4';
+  grid-template-columns: 48% 48%;
+  grid-template-rows: 150px 250px 250px 150px 250px 250px;
+  height: 88rem;
+  padding: 2rem;
   grid-column-gap: 4%;
   grid-row-gap: 1rem;
-  height: calc(1rem * 2 + 9.3rem + 20.3rem * 2);
-  padding: 1rem;
 }
+
 #SectionContainer1 h1 {
   text-align: center;
   padding-top: 5vh;
@@ -369,21 +373,7 @@ a[class*="new"]:focus {
  }
 
  /* Make first section responsive */
- @media (max-width: 1000px) {
-   #SectionContainer1 {
-     display: grid;
-     grid-template-areas:
-     'announcements announcements'
-     'ann1 imgSection1'
-     'ann2 imgSection1'
-     'news news'
-     'new1 new2'
-     'new3 new4';
-     grid-template-columns: 48% 48%;
-     grid-template-rows: 150px 250px 250px 150px 250px 250px;
-     height: 2050px;
-   }
- }
+
 
  @media (max-width: 800px) {
    #SectionContainer1 {
